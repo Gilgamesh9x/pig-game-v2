@@ -8,11 +8,11 @@
     <title>Pig Game</title>
   </head>
   <body>
-    <a href="#" class="rules">Rules</a>
-    <div class="welcome-message">
-      <h1>Welcome to the game!</h1>
-    </div>
     <main>
+      <div class="welcome-message">
+        <h1>Welcome to the game!</h1>
+      </div>
+      <a href="#" class="rules">Rules</a>
       <section class="player player--0">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score score--0">0</p>
@@ -37,14 +37,20 @@
       <button class="btn btn--new not-allowed">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+
+      <div class="container">
+        <div class="group">
+          <input
+            type="number"
+            placeholder="Max score"
+            class="max-score"
+            required
+          />
+          <button class="select">Select</button>
+        </div>
+        <p class="paragraph">Select a max score!</p>
+      </div>
     </main>
-    <div>
-      <input type="number" placeholder="Max score" class="max-score" required />
-      <button class="select">Select</button>
-    </div>
-    <div>
-      <p class="paragraph">Select a max score!</p>
-    </div>
 
     <div class="rules-display hidden">
       <button class="close-modal">&times;</button>
