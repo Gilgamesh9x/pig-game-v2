@@ -132,7 +132,7 @@ main {
   margin-right: 0.7rem;
 }
 .btn--new {
-  top: 4rem;
+  top: 7rem;
 }
 .btn--roll {
   top: 39.3rem;
@@ -175,8 +175,8 @@ main {
 
 .rules {
   position: absolute;
-  top: 2rem;
-  left: 50%;
+  top: 0.7rem;
+  left: 3%;
   transform: translateX(-50%);
   text-align: center;
   background-color: rgba(255, 255, 255, 0.6);
@@ -193,7 +193,7 @@ main {
 
 .welcome-message {
   position: absolute;
-  top: 7rem;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -201,61 +201,42 @@ main {
   backdrop-filter: blur(10px);
   padding: 1rem;
   border-radius: 9px;
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  top: 56rem;
+  left: 30%;
+  display: flex;
+  gap: 30px;
+  z-index: 1;
+}
+
+.group {
+  display: flex;
+  gap: 5px;
 }
 
 input {
-  position: absolute;
-  top: 80rem;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  padding: 1rem;
-  border-radius: 9px;
-  font-size: 2.5rem;
-  color: #333;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  border: 0;
-  outline: none;
-  width: 10%;
-  display: inline-block;
-}
-
-.paragraph {
-  position: absolute;
-  top: 86rem;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  padding: 1rem;
-  border-radius: 9px;
-  font-size: 2.5rem;
-  color: #333;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  text-decoration: none;
+  padding: 0.5rem;
 }
 
 .select {
-  position: absolute;
-  top: 81rem;
-  left: 57%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding: 8px;
+  padding: 0.4rem;
+}
+
+.paragraph {
+  padding: 0.8rem;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-  border-radius: 9px;
-  border: none;
-  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .not-allowed {
